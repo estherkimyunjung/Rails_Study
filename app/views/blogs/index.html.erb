@@ -1,0 +1,10 @@
+<h1>List all Blogs</h1>
+<ul>
+    <% @blogs.each do |blog|%>
+    <li> <a href="/blogs/<%= blog.id%>%">Title: <%= blog.title%></a><br> 
+        <h4>Date: <%= blog.date%></h4> 
+        <h4>Content: <%= blog.content%></h4>
+        <h4>Rating: <%=blog.rating%></h4> 
+    </li>
+    <% end %>
+</ul>
